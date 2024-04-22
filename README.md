@@ -1,6 +1,6 @@
 # SwiftUI Project - Astronomy Picture of the Day API
 
-Demonstrates a SwiftUI Astronomy Picture of the Day app, consuming NASA's APOD API for the last 7 days.
+Demonstrates a SwiftUI Astronomy Picture of the Day app, consuming NASA's APOD API.
 
 # APOD API
 
