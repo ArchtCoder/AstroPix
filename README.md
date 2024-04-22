@@ -5,9 +5,11 @@ Demonstrates a SwiftUI Astronomy Picture of the Day app, consuming NASA's APOD A
 # APOD API
 
 NASA provides a public API that allows us to request the current APOD, the APOD for a partucular date (or date range) or chose a number of random APOD images. 
+
 You can view details of the API (and other NASA APIs) here: https://api.nasa.gov/index.html.
 
 Generate an API key from https://api.nasa.gov
+
 Change in Constants.swift
 
 # Demo
