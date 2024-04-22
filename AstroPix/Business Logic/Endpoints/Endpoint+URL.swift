@@ -20,7 +20,7 @@ struct Endpoint {
         let endDateString = formatter.string(from: createDate(daysFromToday: 1))
         
         let url = URL(string: Constants.baseURL)!
-        let urlQuery = url.withQuery(["api_key": Constants.key,
+        let urlQuery = url.withQuery(["api_key": Constants.apikey,
                                      "start_date": startDateString,
                                      "end_date": endDateString])!
         return urlQuery
