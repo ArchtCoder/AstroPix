@@ -15,5 +15,8 @@ class DetailViewModel: ObservableObject {
     
     init(apodModel: ApodModel) {
         self.apodModel = apodModel
+        
+        self.imageUrl = apodModel.url
+        self.description = apodModel.explanation
     }
 }

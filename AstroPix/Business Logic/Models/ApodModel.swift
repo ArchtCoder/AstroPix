@@ -25,16 +25,3 @@ struct ApodModel: Codable, Identifiable {
         case url
     }
 }
-
-
-
-/// Helper function that returns a UIImage from a URL. If the URL is invalid a default image is returned.
-/// - Parameter url: URL of an image
-//fileprivate func downloadImage(url: String) -> UIImage {
-//    if let imageUrl = URL(string: url), let imageData = try? Data(contentsOf: imageUrl) {
-//        return UIImage(data: imageData)!
-//    }
-//    
-//    return UIImage(named: "OwlSmall")!  // Return a default image
-//}
-//

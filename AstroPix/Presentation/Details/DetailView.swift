@@ -14,7 +14,7 @@ struct DetailView: View {
     var body: some View {
         ScrollView {
             VStack {
-                AsyncImage(url: URL(string: viewModel.apodModel.url)) { phase in
+                CacheAsyncImage(url: URL(string: viewModel.imageUrl)!) { phase in
                     switch phase {
                     case .empty:
                         ProgressView()
@@ -33,7 +33,7 @@ struct DetailView: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 15) {
-                    Text(viewModel.apodModel.explanation)
+                    Text(viewModel.description)
                     
                     Spacer()
                 }.padding()

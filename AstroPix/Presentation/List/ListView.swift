@@ -40,7 +40,7 @@ struct RowView: View {
     
     var body: some View {
         HStack {
-            AsyncImage(url: URL(string: apodModel.url)) { phase in
+            CacheAsyncImage(url: URL(string: apodModel.url)!) { phase in
                 switch phase {
                 case .empty:
                     ProgressView()
