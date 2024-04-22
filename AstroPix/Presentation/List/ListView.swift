@@ -28,6 +28,9 @@ struct ListView: View {
                         }
                     }
                 }
+                .refreshable {
+                    viewModel.fetchData()
+                }
                 .navigationTitle("Picture of the Day")
             }
         }
